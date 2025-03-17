@@ -1,8 +1,13 @@
 {
 	"version": 5,
 	"id": "AI34-veUBl3l7adq3",
-	"total_points": 135,
+	"total_points": 145,
 	"points_record": [
+		{
+			"when": "2025-03-17T12:46:26+01:00",
+			"points": 10,
+			"reason": "Session 2"
+		},
 		{
 			"when": "2025-03-04T00:00:14+01:00",
 			"points": 15,
@@ -1986,9 +1991,9 @@
 						"name": "Naturalist",
 						"specialization": "Earthlike",
 						"modifier": -5,
-						"level": 8,
-						"adjusted_level": 8,
-						"points": -8
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
 					},
 					"calc": {
 						"level": 12,
@@ -2024,7 +2029,7 @@
 							"modifier": -3
 						}
 					],
-					"points": 8,
+					"points": 12,
 					"defaulted_from": {
 						"type": "iq",
 						"modifier": -6,
@@ -2033,8 +2038,8 @@
 						"points": -6
 					},
 					"calc": {
-						"level": 13,
-						"rsl": "IQ+1"
+						"level": 14,
+						"rsl": "IQ+2"
 					}
 				},
 				{
@@ -2065,10 +2070,10 @@
 						]
 					},
 					"tech_level": "4",
-					"points": 4,
+					"points": 8,
 					"calc": {
-						"level": 11,
-						"rsl": "IQ-1"
+						"level": 12,
+						"rsl": "IQ+0"
 					}
 				},
 				{
@@ -2616,6 +2621,46 @@
 			"name": "Misc",
 			"children": [
 				{
+					"id": "sx38D1iDUQTJYYNsy",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Skills.skl",
+						"id": "s7zUqAO5PEC5JKk_W"
+					},
+					"name": "Fast-Talk",
+					"reference": "B195",
+					"tags": [
+						"Criminal",
+						"Social",
+						"Spy",
+						"Street"
+					],
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Acting",
+							"modifier": -5
+						}
+					],
+					"points": 2,
+					"defaulted_from": {
+						"type": "iq",
+						"modifier": -5,
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
+					},
+					"calc": {
+						"level": 12,
+						"rsl": "IQ+0"
+					}
+				},
+				{
 					"id": "s24aRZMemeQ-esZSW",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -3010,6 +3055,48 @@
 					"calc": {
 						"level": 10,
 						"rsl": "IQ-2"
+					}
+				},
+				{
+					"id": "pHIpSLnhHjKJy9lF7",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Magic\\Magic Spells.spl",
+						"id": "pW0YK24F4I27ejrNK"
+					},
+					"name": "Massive Plant Growth",
+					"reference": "M162",
+					"tags": [
+						"Plant"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Plant"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "3",
+					"maintenance_cost": "2",
+					"casting_time": "10 sec",
+					"duration": "1 min",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "heal plant"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
 					}
 				},
 				{
@@ -4170,7 +4257,7 @@
 		}
 	],
 	"created_date": "2025-02-07T23:24:25+01:00",
-	"modified_date": "2025-03-04T00:24:46+01:00",
+	"modified_date": "2025-03-17T12:52:41+01:00",
 	"calc": {
 		"swing": "1d-1",
 		"thrust": "1d-2",
